@@ -83,7 +83,7 @@ class AdView(MethodView):
 
 ad_view = AdView.as_view('ads')
 app.add_url_rule('/ads/', view_func = ad_view, methods = ['POST'])
-app.add_url_rule('/ads/<int:ad_id>', view_func = ad_view, methods = ['GET,PATCH,DELETE'])
+app.add_url_rule('/ads/<int:ad_id>', view_func = ad_view, methods = ['GET','PATCH','DELETE'])
 
 app.run()
 
